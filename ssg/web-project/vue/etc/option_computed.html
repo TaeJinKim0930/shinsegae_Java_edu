@@ -1,0 +1,66 @@
+<!-- Computed 란 기본 데이터에서 계산되어진 값을 속성으로 공개하는 기능(function) -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Option template</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+        <!-- 템플릿 문법에는 Mustache 문법과 v-bind 속성이 있습니다. -->
+    </head>
+    <body>
+        <div id="app">
+            <div>
+                <ul>
+                    <!-- input 박스를 만들어줘서 홈페이지에서 값을 변경 시 실시간으로 자동으로 적용이 가능 -->
+                    <li v-for="item in items" v-bind:key="item.name">
+                        {{item.name}}의 가격 : <input type = "text" v-on:input="item.price = $event.target.value" v-bind:value ="item.price">
+                    </li>
+                </ul>
+                <ul>
+                    <!-- 여기에 있는 items 가 밑에 있는 items 를 가지고 오는거고 item 은 여기서 임시로 만들어 준거. -->
+                    <li v-for="item in items" v-bind:key="item.name">
+                        {{item.name}}:{{item.price}} x {{item.quantity}} =
+                        {{item.price * item.quantity}} 원
+                    </li>
+                </ul>
+                <hr>
+                <p> 합계 : {{totalPrice}}</p>
+            </div>
+        </div>
+
+        <script>
+            var items = [
+                {
+                    name: "cpu",
+                    price: 45000,
+                    quantity: 1,
+                },
+                {
+                    name: "mainBoard",
+                    price: 75000,
+                    quantity: 2,
+                },
+                {
+                    name: "KeyBoard",
+                    price: 15000,
+                    quantity: 3,
+                },
+            ];
+
+            console.assert(typeof Vue !== "undefined");
+            new Vue({
+                el: "#app",
+                data: { items: items },
+                computed : {
+                    // 0 으로 세팅하는거가 .reduce() function 에서 return 하는 값의 초기값만 0으로 해주는거 그래서 여기서는 sum 의 초기값이 0.
+                    totalPrice : () => {
+                        return this.items.reduce((sum, item) => {
+                            return sum += (item.price * item.quantity);
+                        }, 0)
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ECMAScript6</title>
+</head>
+<body>
+	<script>
+		let numSet = new Set();
+		numSet.add(1);
+		numSet.add(2);
+		numSet.add(3);
+		numSet.add(4);
+
+		console.log(numSet.forEach(entry => console.log(entry)));
+		
+		var key = numSet.values();
+		console.log(key.forEach(keys => console.log(keys)));
+		
+	</script>
+</body>
+</html>

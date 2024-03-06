@@ -1,0 +1,20 @@
+Alarm
+	강수량이 200mm 이상일 경우 알림 경보를 울리기 위해 필요한 클래스
+Dehumid
+	제습기의 정보가 담김 (습도, 상태, 날씨정보:getter, setter)
+Aircon
+	에어컨의 정보가 담김 (온도, 상태, 날씨정보:getter, setter)
+Warning
+	경보를 울림
+Broker
+	??
+Rsensor
+	강수량를 측정할 수 있는 센서 (extends 
+Hsensor
+	습도를 측정할 수 있는 센서
+Tsensor
+	온도를 측정할 수 있는 센서
+Frame
+	정지/경보를 울릴 기준점?..
+Graphics
+	기계 스크린?.. 출력?..

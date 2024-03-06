@@ -1,0 +1,42 @@
+@startuml
+abstract class ObjectDBIO {
++ Connection conn
+# boolean open()
+# boolean close()
+# ResultSet execute(String,ResultSet)
+# void execute(String)
+}
+class main {
++ {static} void main(String[])
+}
+class User {
+- String userid
+- String userName
+- String userPassword
+- int userAge
+- String userEmail
+}
+class Board {
+- int bno
+- String btitle
+- String bcontent
+- String bwriter
+- Date bdate
+- String bfilename
+- Blob bfiledata
+}
+class User_impl {
+}
+class Board_impl {
++ JSONObject list()
++ void mainMenu()
+- void create(Scanner)
+- void read(Scanner)
+- void update(Connection,Scanner)
+- void clear()
+}
+
+
+ObjectDBIO <|-- main
+ObjectDBIO <|-- Board_impl
+@enduml

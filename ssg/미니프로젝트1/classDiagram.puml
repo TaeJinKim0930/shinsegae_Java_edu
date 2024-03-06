@@ -1,0 +1,585 @@
+@startuml
+class Menu.WarehouseMenu {
+- BufferedReader br
+~ WarehouseServiceImpl whServiceImpl
++ void mainMenu()
+}
+class Entity.Warehouse {
+- int whCode
+- int topCategoryNum
+- String topCategoryName
+- String whName
+- int whAddrNo
+- String whAddrName
+- Timestamp whRegistDate
+- String managerPhone
+}
+class entity.Warehousing {
+- String insertCode
+- Date insertDate
+- String insertPersonnel
+- int insertQuantity
+- int insertUnitPrice
+- int insertPrice
+- String insertState
+- int insertconfirm
+- String whName
+- String prodName
+}
+class exception.ExceptionImpl {
++ {static} boolean isValidEmail(String)
++ {static} boolean isValidNumber(String)
+}
+class controller.PreorderController {
++ {static} void main(String[])
+}
+class exception.ExceptionOutput {
+- ErrorCodeList errorCodeList
+}
+class service.OrderServiceImpl {
+- {static} BufferedReader br
+- DataSource dataSource
++ void mainMenu()
++ void subList()
++ void retrieveOrder()
++ void orderConfirm()
+- void changeOrderStatusToConfirmed(String)
++ void exit()
++ void retrieveDeleteOrder()
++ void updateOrder()
++ void updateSubOrder()
++ void updateReceiverInfo()
++ void updateShipStatus()
++ void updateBuyerInfo()
++ void goBack()
++ void myDaoMethod()
+}
+class service.PreorderServiceImpl {
+~ DataSource dataSource
+- {static} int i
++ void menuList()
++ void authMenuList()
++ void request()
++ void confirm()
++ void update()
++ void cancle()
++ void authorize()
++ void exit()
++ void preorderList()
++ void addPreorderList()
++ String auto_increment()
++ void list()
+}
+interface service.OrderService {
+~ {static} OrderDao orderDao
+~ void mainMenu()
+~ void subList()
+~ void retrieveOrder()
+~ void orderConfirm()
+~ void exit()
+~ void retrieveDeleteOrder()
+~ void updateOrder()
+~ void updateBuyerInfo()
+~ void updateSubOrder()
+~ void updateReceiverInfo()
+~ void updateShipStatus()
+~ void goBack()
+}
+class dao.ShippingDao {
+- DataSource dataSource
+}
+class service.StockServiceImpl {
++ void get()
+}
+enum model.UserRole {
++  GENERAL_MANAGER
++  WAREHOUSE_MANAGER
++  DELIVERYMAN
++  USER
++  NON_USER
++  CUSTOMER
++ boolean isGeneralManager()
++ boolean isWarehouseManager()
++ boolean isDeliverMan()
++ boolean isUser()
++ boolean isNonUser()
++ boolean isCUSTOMER()
+}
+class Entity.WarehouseCategory {
+- int topCategoryNum
+- String topCategoryName
+}
+class entity.Stock {
+- int stockNo
+- int whCode
+- int prodNo
+- String insertCode
+- String prodName
+- int stockQuantity
+- int salesStatus
+- int insertQuantity
+}
+class controller.ShippingController {
++ {static} void main(String[])
+}
+class dao.UserDao {
+- DataSource dataSource
+~ BufferedReader br
++ boolean userIDValidator(String)
++ void approveUser(User)
++ User authUser(String,String)
++ Customer authCustomer(String,String)
++ User storeUser(ResultSet)
++ Customer storeCustomer(ResultSet)
+}
+class Main {
++ {static} void main(String[])
+}
+enum model.UserStatus {
++  DEACTIVATE
++  ACTIVATE
++  BANNED
++  REQUEST
++  REJECT
++ boolean isDeactivated()
++ boolean isActivated()
++ boolean isBanned()
++ boolean isRequested()
++ boolean isRejected()
+}
+class service.UserUsage {
++ {static} void main(String[])
+}
+class service.ShippingServiceImpl {
+~ BufferedReader bf
+~ Shipping sh
+~ ShippingMenu sm
+~ List<String> requestlist
+- DataSource dataSource
+- {static} int i
++ void menuList()
++ void authMenuList()
++ void request()
++ void ShippingDocument()
++ void ShippingList()
++ void confirm()
++ void serch()
++ void authorize()
++ void exit()
++ void myDaoMethod()
++ String auto_increment()
+}
+interface service.StockService {
+~ {static} StockDao stockDao
+~ void get()
+}
+class config.DBConnection {
+- {static} DataSource dataSourceInstance
++ {static} DataSource getDataSource()
+- {static} BasicDataSource getSource()
+- {static} BasicDataSource getBasicDataSource()
+}
+class dao.BrandDao {
+- DataSource dataSource
++ void add_db(Brand)
++ List<Brand> get_db()
++ void modify_db(int,Brand)
++ void remove_db(int)
+}
+class entity.Customer {
+- int customer_id
+- UserRole userRole
+- String user_id
+- char name
+- String phone
+- String password
+- String email
+- char addr1
+- char addr2
+- int zipcode
+- char sign_up_path
+- boolean text_agree
+- boolean email_agree
+- boolean ad_agree
+- UserStatus userStatus
+- Date reg_date
+}
+interface service.PreorderService {
+~ {static} BufferedReader bf
+~ {static} Preorder order
+~ {static} PreorderMenu pm
+~ {static} List<String> requestlist
++ void preorderList()
++ {abstract}void request()
++ void confirm()
++ void update()
++ void cancle()
++ void authorize()
++ void exit()
+}
+interface service.UserService {
+~ {static} BufferedReader br
+~ {static} UserDao userDao
+~ boolean isCompRegNumValid(int)
+~ boolean emailValidator(String)
+~ boolean isValidPhoneNumber(String)
+~ boolean isValidUserId(String)
+~ void userLogin(String,String,String)
+~ void registerUser()
+}
+interface service.BrandService {
+~ {static} BufferedReader in
+~ {static} BrandDao brandDao
+~ void add()
+~ void get()
+~ void modify()
+~ void remove()
+~ void confirm()
+~ void cancel()
+~ void exit()
+}
+class entity.NonUser {
+- int id
+- int qa_ID
+}
+class exception.Menu {
+~ BufferedReader br
+~ ExceptionImpl errors
++ void emailValidator(User)
+}
+class entity.Order {
+- int id
+- String orderId
+- int customer_Id
+- int prodNo
+- String shopId
+- Date orderDate
+- int orderQuantity
+- String orderStatus
+- String buyer
+- String receiver
+- String recipientPhone
+- String recipientAddr
+- int unitPrice
+- int salesAmount
+- int payment
+- String courierName
+- String deliveryCategory
+}
+class entity.Category {
+- int categoryNo
+- String categoryName
+- Timestamp reg_date_category
+}
+class view.UserMenu {
+~ UserServiceImpl userService
+~ BufferedReader br
++ boolean mainMenu()
++ void registerMenu()
++ boolean loginMenu(String)
+}
+class menu.Menu {
+~ BufferedReader in
+~ BrandController brand
+~ ProductController productController
++ {static} void menuList()
++ {static} void main(String[])
+}
+enum exception.ErrorCodeList {
++  INVALID_INPUT_EMAIL
++  INVALID_INPUT_PHONENUMBER
++  ID_ALREADY_EXISTS
++  ID_MAXIMUM_LENGTH_EXCCEDED
++  ID_CONTAINS_SPACE
++  ID_CONTAINS_NON_ALPHABET_NUMBER
++  SQL_SELECT_FAIL
++  NULL_POINTER_EXCEPTION
++  USER_INPUT_ERROR
+- int status
+- String code
+- String message
++ String getMessage()
++ String getCode()
++ int getStatus()
+}
+class dao.MyDao {
+- DataSource dataSource
++ void myDaoMethod()
+}
+class controller.ProductController {
+~ {static} ProductServiceImpl productService
+~ BufferedReader in
++ void mainMenu()
+}
+class entity.Preorder {
+- String preoCode
+- String takeCode
+- Date preoDate
+- String preoState
+- int preoconfirm
+- int preoQuantity
+- int preoUnitPrice
+- int preoPrice
+- String prodName
+- int stockQuantity
+- String customer
+- String warehaouserName
+- int prodNo
+}
+class Dao.WarehouseDao {
+- DataSource dataSource
++ void add(Warehouse)
++ List<Warehouse> get()
++ List<WarehouseCategory> getClassification()
++ List<Warehouse> getCategoryClassify(int)
++ List<WarehouseAddress> getAddrList()
++ List<Warehouse> getAddrClassify(int)
++ void removeWarehouse(int)
+}
+class service.BrandServiceImpl {
++ void add()
++ void get()
++ void modify()
++ void remove()
++ void confirm()
++ void cancel()
++ void exit()
+}
+class entity.Brand {
+- int brandNo
+- String brandName
+- Timestamp reg_date
+}
+class service.UserServiceImpl {
+~ BufferedReader br
++ boolean isCompRegNumValid(int)
++ boolean emailValidator(String)
++ boolean isValidPhoneNumber(String)
++ boolean isValidUserId(String)
++ void userLogin(String,String,String)
++ void registerUser()
+}
+interface service.ProductService {
+~ {static} ProductDao productDao
+~ {static} BufferedReader in
+~ {static} BrandServiceImpl brandService
+~ void add()
+~ void get()
+~ void get_one(int)
+~ void modify()
+~ void confirm()
+~ void cancel()
+}
+class dao.StockDao {
+- DataSource dataSource
++ void insertStock()
++ void outStock()
++ List<Stock> get_db()
+}
+class view.WarehousingMenu {
++ void menuList()
++ void authMenuList()
+}
+class dao.ProductDao {
+- DataSource dataSource
++ void add_db(Product)
++ List<Category> get_categpry()
++ List<Product> get_all_db()
++ Product get_one_db(int)
++ void modify_db(int,Product)
+}
+class service.ProductServiceImpl {
++ void add()
++ void get()
++ void get_one(int)
+- void get_category()
++ void modify()
++ void confirm()
++ void cancel()
+}
+class dao.PreorderDao {
+- DataSource dataSource
+}
+class service.WarehousingServiceImpl {
+~ BufferedReader bf
+~ Warehousing ws
+~ WarehousingMenu wm
+- DataSource dataSource
+~ List<String> requestlist
+- {static} int i
++ void menuList()
++ void authMenuList()
++ void request()
++ void admincurrent()
++ void orderInsertDocument()
++ void orderInsertList()
++ void confirm()
++ void update()
++ void authorize()
++ void assignPositon()
++ void cancle()
++ void assignDate()
++ void exit()
++ String auto_increment()
++ void list()
++ void myDaoMethod()
+}
+interface exception.ErrorModel {
+~ String getMessage()
+~ String getCode()
+~ int getStatus()
+}
+class controller.BrandController {
+~ BrandServiceImpl brandService
+~ BufferedReader in
++ void mainMenu()
+}
+class controller.WarehousingController {
++ {static} void main(String[])
+}
+class view.PreorderMenu {
++ void menuList()
++ void authMenuList()
+}
+class dao.OrderDao {
+- DataSource dataSource
+~ BufferedReader br
++ int getOrderId()
++ void createOrder()
+}
+class entity.Shipping {
+- String shippingCode
+- int stockNo
+- Date shippingDate
+- String shippingState
+- int shippingconfirm
+- String shippingPersonnel
+- int shippingQuaintity
+- int shippingUnitPrice
+- int shippingPrice
+- String whName
+- String prodName
+}
+class dao.WarehousingDao {
+- DataSource dataSource
+}
+class Entity.WarehouseAddress {
+- int whAddressNo
+- String whAddressName
+}
+class Service.WarehouseServiceImpl {
+- BufferedReader br
+- List<Warehouse> whList
+~ WarehouseDao dao
++ void addWarehouse()
++ void getWarehouse()
++ void getWarehouseAll()
++ void ClassifyWarehouse()
++ void ClassifyDetailedWarehouse(int)
++ void ClassifyWarehouseAddr()
++ void modifyWarehouse()
++ void removeWarehouse()
+}
+class WarehouseMain {
++ {static} void main(String[])
+}
+class view.ShippingMenu {
++ void menuList()
++ void authMenuList()
+}
+class SellPick {
++ {static} void main(String[])
+}
+interface Service.WarehouseService {
+~ void addWarehouse()
+~ void getWarehouse()
+~ void ClassifyWarehouse()
+~ void modifyWarehouse()
+~ void removeWarehouse()
+}
+class entity.Product {
+- int prodNo
+- int categoryNo
+- String categoryName
+- int brandNo
+- String prodName
+- String prodBrand
+- int salesPrice
+- String prodDescription
+- Timestamp reg_date
+- String salesState
+- int isProdDisplay
+}
+class view.TotalMenu {
+~ BufferedReader bf
+~ PreorderServiceImpl pm
+~ ShippingServiceImpl sm
+~ WarehousingServiceImpl wm
+~ WarehouseMenu whm
+~ BrandController bm
+~ ProductController pcm
+~ OrderServiceImpl om
+~ UserMenu userMenu
++ void selectMenu()
+}
+class entity.User {
+- int seller_id
+- UserRole userRole
+- int comp_reg_num
+- String comp_name
+- String user_id
+- char name
+- String phone
+- String password
+- String email
+- char addr1
+- char addr2
+- int zipcode
+- char sign_up_path
+- boolean text_agree
+- boolean email_agree
+- boolean ad_agree
+- UserStatus userStatus
+- Date reg_date
+}
+class StartMain {
++ {static} void main(String[])
+}
+class config.UserManager {
+- {static} UserManager instance
+- User curUser
+- Customer curCustomer
+- Customer customer
++ {static} UserDao userDao
+~ {static} BufferedReader br
++ {static} UserManager getInstance()
++ void loginUser(User)
++ void loginCustomer(Customer)
++ void logoutUser()
++ void logoutCustomer()
++ boolean isUserLoggedIn()
++ boolean isCustomerLoggedIn()
++ {static} UserStatus statusChecker(User)
+}
+class OrderMain {
++ {static} void main(String[])
+}
+
+
+exception.RuntimeException <|-- exception.ExceptionOutput
+service.OrderService <|.. service.OrderServiceImpl
+service.PreorderService <|.. service.PreorderServiceImpl
+service.StockService <|.. service.StockServiceImpl
+config.DBConnection <|-- dao.UserDao
+config.DBConnection <|-- dao.BrandDao
+config.DBConnection <|-- dao.MyDao
+config.DBConnection <|-- Dao.WarehouseDao
+service.BrandService <|.. service.BrandServiceImpl
+service.UserService <|.. service.UserServiceImpl
+config.DBConnection <|-- dao.StockDao
+config.DBConnection <|-- dao.ProductDao
+service.ProductService <|.. service.ProductServiceImpl
+config.DBConnection <|-- dao.PreorderDao
+config.DBConnection <|-- dao.WarehousingDao
+Service.WarehouseService <|.. Service.WarehouseServiceImpl
+@enduml

@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Vue Sample</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+     <ul>
+      <p>app1</p>
+      <li v-for="item in items" v-bind:key="item.name">
+        {{item.name}}의 가격: <input type="text" v-on:input="item.price =$event.target.value" v-bind:value="item.price"/>
+      </li>
+     </ul>
+     <hr>
+     <items-list v-bind:items="items"> </items-list>
+    </div>
+
+    <div id="app2">
+      <ul>
+        <p>app2</p>
+        <li v-for="item in items" v-bind:key="item.name">
+          {{item.name}}의 가격 : <input type="text" v-on:input="item.price = $event.target.value" v-bind:value="item.price" />
+        </li>
+      </ul>
+      
+    </div>
+
+    <script>
+
+      Vue.component(ItemList = {
+        props : ['items'],
+        template : 
+        `
+        <div>
+          <ul>
+            <p>app1 comp</p>
+            <li v-for="item in items" v-bind:key="item.name">
+                {{item.name}} : {{item.price}} x {{item.quantity}} = {{item.price * item.quantity}}원
+            </li>
+          </ul>
+          합계: {{totalPrice}}
+          <hr>
+        </div>
+        `, computed: {
+          totalPrice: function () {
+            return this.items.reduce(function (sum, item) {
+              return sum + (item.price * item.quantity)
+            }, 0)
+          }
+        }
+      });
+
+      var items = [
+        {
+          name: 'CPU', price: 462984, quantity: 1
+        }, {
+          name: '메인보드', price: 112053, quantity: 1
+        }, {
+          name: '메모리', price: 79608, quantity: 2
+        }
+      ];
+
+      new Vue({
+        el: "#app",
+        data : {
+          items : items
+        }, // 컴포넌트를 등록함과 동시에 뷰 인스턴스 자체가 상위 컴포넌트로 프로모션 된다.
+        components : {
+          'items-list' : ItemList
+        }
+      });
+
+      new Vue({
+        el: "#app2",
+        data : {
+          items : items
+        }
+      });
+
+    </script>
+  </body>
+</html>

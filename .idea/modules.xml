@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Board_Team_Project/Board_Team_Project.iml" filepath="$PROJECT_DIR$/Board_Team_Project/Board_Team_Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IOStream/IOStream.iml" filepath="$PROJECT_DIR$/IOStream/IOStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/db_connection/db_connection.iml" filepath="$PROJECT_DIR$/db_connection/db_connection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intellij/java-basic/java-basic.iml" filepath="$PROJECT_DIR$/intellij/java-basic/java-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/intellij/java-object/java-object.iml" filepath="$PROJECT_DIR$/intellij/java-object/java-object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/json/json.iml" filepath="$PROJECT_DIR$/json/json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memo/memo.iml" filepath="$PROJECT_DIR$/memo/memo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/networking/networking.iml" filepath="$PROJECT_DIR$/networking/networking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/shinsegae_Java_edu.iml" filepath="$PROJECT_DIR$/.idea/shinsegae_Java_edu.iml" />
+    </modules>
+  </component>
+</project>

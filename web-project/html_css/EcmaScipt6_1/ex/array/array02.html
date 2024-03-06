@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var text, len, i;
+        var plantents = ["수", "금", "지", "화", "목"];
+        plantents.push("토");
+        plantents[plantents.length] = "천";
+
+        text = "<ul>";
+        plantents.forEach((p) => { text += "<li>" + p + "</li>"; });
+        text += "</ul>";
+
+        console.log(text);
+
+        plantents.sort(); // 문자열 정렬
+        plantents.reverse(); // 내림차순
+        
+        var nums = [1,2,3,4,65,7,8,7,4,32,2,5,5,3];
+
+        // 숫자로 sort 올림차순
+        nums.sort((a,b) => { 
+                return a-b;
+        });
+        console.log(nums);
+
+        // 내림차순
+        nums.sort((a,b) => { 
+                return b-a;
+        });
+        console.log(nums);
+
+        var persons = [
+            {name: "소원", age : 26, visual : "Perfect"}, {name: "소원1", age : 27, visual : "Pretty"}, {name: "소원2", age : 28, visual : "Beauty"}
+        ];
+
+        console.log(persons.sort((a, b) => {
+            return a.age - b.age;
+        }));
+
+        console.log(persons.sort((a, b) => {
+            var x = a.name.toLowerCase();
+            var y = b.name.toLowerCase();
+
+            if (x<y) return -1;
+            else if (x>y) return 1;
+            else return 0;
+        }));
+
+    </script>
+</body>
+</html>

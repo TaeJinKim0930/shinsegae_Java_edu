@@ -1,0 +1,14 @@
+* [v] DB: oracle -> mysql
+* [ ] StringTokenizer -> Something else (reading user input) ==> maybe next() + split()
+* [ ] Builder
+* [ ] Singleton
+* [ ] Singleton + Builder
+* [ ] Error list
+* [ ] Modeling
+* [ ] DOC file 파일 만들어서 원하는 키워드 타고가기
+* [ ] Annotation : @author 작성자를 명시한다
+                    @see    함께 참조할 다른 메소드나 클래스 등
+                    @version    버전 정보를 명시한다
+                    @param  생성자 혹은 메소드가 받는 파라메타를 설명한다
+                    @return     반환값에 대해 설명한다
+* [ ]

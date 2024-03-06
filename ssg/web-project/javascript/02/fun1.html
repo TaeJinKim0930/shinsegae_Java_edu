@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 함수 선언
+      
+      function add (x,y) {
+        return x + y;
+      }
+
+      function sub (x,y) {
+        return x + y;
+      }
+
+      function multi (x,y) {
+        return x + y;
+      }
+
+      function div (x,y) {
+        return x + y;
+      }
+
+      function cal (callback,x,y) {
+        return callback(x,y);
+      }
+      
+    //   console.log(cal(add,100,200));
+
+    let obj = {
+        val : [1,2,3],
+        logVal : function(value, i) {
+            console.log(this,value,i);
+        }
+    };
+
+    obj.logVal(1,2);
+
+    // ----------------------------------------------------
+    let obj1 = {
+        name : 'obj1',
+        func: function() {
+            let self = this.func;
+            return function() {
+                console.log(self.name);
+            }
+        }
+    };
+
+
+    // ----------------------------------------------------------
+
+    let count = 0;
+    let timer = function() {
+        console.log(count);
+        if (++count > 5) {
+            clearInterval(alarm);
+        }
+    };
+
+    let alarm = setInterval(timer, 1000);
+
+    // ----------------------------------------------------------
+
+    let array = [10,20,30].map(function (currentValue,index) {
+        console.log(currentValue, index);
+        return currentValue + 10;
+    })
+    console.log(array);
+
+
+    // ----------------------------------------------------------
+
+    
+    </script>
+  </head>
+  <body></body>
+</html>

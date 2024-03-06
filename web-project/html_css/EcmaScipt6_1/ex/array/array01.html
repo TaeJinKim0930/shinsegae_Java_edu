@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var coffees = ["Ame", "Capu", "Espr"];
+            var coffees = new Array("Ame", "Capu", "Espr");
+            var order = coffees[0];
+            // console.log(order); // Ame
+            coffees[0] = "CafeL";
+
+            /**
+         *  0
+            : 
+            "CafeL"
+            1
+            : 
+            "Capu"
+            2
+            : 
+            "Espr"
+         * */
+            // console.log(coffees);
+
+            // person 배열객체에 성은 최 이름은 소원 나이는 26 저장
+            var person = {
+                lname: "최",
+                fname: "소원",
+                age: 26,
+            };
+
+            var text, len, i;
+            var plantents = ["수", "금", "지", "화", "목"];
+
+            // len = plantents.length;
+            // text = "<ul>";
+
+            // for (let i = 0; i < len; i++) {
+            //     text += "<li>" + plantents[i] + "</li>";
+            // }
+            // text += "</ul>";
+
+            text = "<ul>";
+            plantents.forEach(myFunc);
+            text += "<ul>";
+
+            // plantents.forEach((p) => {
+            //     text += "<li>" + p + "</li>";
+            // });
+            
+            function myFunc(value) {
+                text += "<li>" + value + "</li>";
+            }
+
+            console.log(text);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+
+/* 링크먼저 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Buhid&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* 파일다음 */
+@import "./reset.css";
+@import "./variable.css";
+@import "./nevigation-bar.css";
+
+* {
+  /* 모든 요소를 화면안에 포함 시키겠다. 테두리를 기준으로 박스 사이즈를 정한다. 
+     이 박스의 사이즈를 넘어가지 않도록 해놓는 거 */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-purple);
+  color: white;
+}
+
+.display-flex-center {
+}
+
+.position-relative {
+}
+
+input {
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+.display-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.position-relative {
+  position : relative;
+}

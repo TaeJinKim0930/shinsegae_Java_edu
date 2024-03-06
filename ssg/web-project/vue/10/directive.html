@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Vue Sample</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <form >
+                <table>
+                    <tr>
+                        <td>사용자아이디</td>
+                        <td>{{ userId }}</td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td><input type="password" v-bind:value = "userPw"/></td>
+                    </tr>
+                    <tr>
+                        <td>소개</td>
+                        <td><textarea rows="5" v-bind:value = "introduction"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>개발자여부</td>
+                        <td>
+                            <span v-if="developer">개발자</span>
+                            <span v-else-if="developer === false">낫개발자</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>외국인여부</td>
+                        <td>
+                            <span v-show="foreigner === 'yes'">외국인</span>
+                            <span v-show="foreigner === 'no'">내국인</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>취미</td>
+                        <td>
+                            <ul>
+                                <li v-for="hobby in hobbyList">{{hobby}}</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>성별</td>
+                        <td>
+                            <span v-if="gender === 'M'">Male</span>
+                            <span v-else-if="gender === 'F'">Female</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>국적</td>
+                        <td>
+                            <select v-bind:value="nationality">
+                                <option disabled value="">
+                                    Please select one
+                                </option>
+                                <option value="01">Korea</option>
+                                <option value="02">Germany</option>
+                                <option value="03">Australia</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>국적</td>
+                        <td>
+                            <span v-if="nationality === '01'">Korea</span>
+                            <span v-else-if="nationality === '02'">Germany</span>
+                            <span v-else-if="nationality === '03'">Australia</span>
+                            <span v-else>None</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>국적</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>소유차량</td>
+                        <td>
+                            <select v-model="carList" multiple>
+                                <option>Volvo</option>
+                                <option>Saab</option>
+                                <option>Santa Fe</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+
+                <p>
+                    <button type="submit">등록</button>
+                </p>
+            </form>
+        </div>
+
+        <script>
+            new Vue({
+                el: "#app",
+                data: {
+                    userId        : "sowon901",
+                    userPw        : "1234",
+                    introduction  : "Hello, Wolrd",
+                    developer     : false,
+                    foreigner     : "no",
+                    hobbyList     : ["수영","테니스","골프"],
+                    gender        : "M",
+                    nationality   : "01",
+                    carList       : ["Santa Fe", "Tucson"],
+                },
+                computed: {
+                  getNationality : () => {
+                    switch (this.nationality) {
+                      case "01":
+                        return "Korea";
+                        break;
+
+                      case "02":
+                        return "Germany";
+                        break;
+
+                      case "03":
+                        return "Australia";
+                        break;
+
+                      default:
+                        return none;
+                        break;
+                    }
+                  }
+                }
+            });
+        </script>
+    </body>
+</html>

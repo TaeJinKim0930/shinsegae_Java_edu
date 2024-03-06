@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/../../build/classes/java/test"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$/../../build/generated/sources/annotationProcessor/java/test">
+		<testFolder url="file://$MODULE_DIR$/../../build/generated/sources/annotationProcessor/java/test"/>
+	</contentEntry>
+	<contentEntry url="file://$MODULE_DIR$/../../src/test">
+		<testFolder url="file://$MODULE_DIR$/../../src/test/java"/>
+		<testFolder url="file://$MODULE_DIR$/../../src/test/resources"/>
+	</contentEntry>
+	<lib name="Gradle: org.projectlombok:lombok:1.18.22" scope="PROVIDED"/>
+	<lib name="Gradle: org.apiguardian:apiguardian-api:1.1.2" scope="PROVIDED"/>
+	<lib name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.8.1" scope="RUNTIME"/>
+	<lib name="Gradle: org.junit.platform:junit-platform-engine:1.8.1" scope="RUNTIME"/>
+	<levels>
+		<level name="Gradle: org.mariadb.jdbc:mariadb-java-client:3.0.3" value="project"/>
+		<level name="Gradle: com.zaxxer:HikariCP:5.0.0" value="project"/>
+		<level name="Gradle: org.modelmapper:modelmapper:3.0.0" value="project"/>
+		<level name="Gradle: org.apache.logging.log4j:log4j-core:2.17.2" value="project"/>
+		<level name="Gradle: org.apache.logging.log4j:log4j-slf4j-impl:2.17.2" value="project"/>
+		<level name="Gradle: org.apache.logging.log4j:log4j-api:2.17.2" value="project"/>
+		<level name="Gradle: jstl:jstl:1.2" value="project"/>
+		<level name="Gradle: org.projectlombok:lombok:1.18.22" value="project"/>
+		<level name="Gradle: org.junit.jupiter:junit-jupiter-api:5.8.1" value="project"/>
+		<level name="Gradle: org.slf4j:slf4j-api:1.7.30" value="project"/>
+		<level name="Gradle: org.junit.platform:junit-platform-commons:1.8.1" value="project"/>
+		<level name="Gradle: org.opentest4j:opentest4j:1.2.0" value="project"/>
+		<level name="Gradle: org.apiguardian:apiguardian-api:1.1.2" value="project"/>
+		<level name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.8.1" value="project"/>
+		<level name="Gradle: org.junit.platform:junit-platform-engine:1.8.1" value="project"/>
+	</levels>
+</component>

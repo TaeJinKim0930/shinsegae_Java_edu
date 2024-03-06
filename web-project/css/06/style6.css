@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    border-color: black;
+    border-style:solid;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+header {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(225, 0, 255);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left : 10px;
+    margin-right : 10px;
+}
+
+main {
+    display : flex;
+    border-radius: 10px;
+    margin-left : 10px;
+    margin-right : 10px;
+}
+
+nav {
+    background-color: blue;
+    width: 100px;
+    height : 200px;
+    border-radius: 10px;
+    margin-right : 10px;
+    
+}
+
+article {
+    background-color: aquamarine;
+    width: 190px;
+    height : 200px;
+    margin-left: 110px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: brown;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px10px;
+    margin-left : 10px;
+    margin-right : 10px;
+    margin-bottom: 10px;
+}
+
+/* 전체박스 중앙, 헤더 태크 스타일링, 메인태그 스타일링, 푸터 태크 스타일링
+*/

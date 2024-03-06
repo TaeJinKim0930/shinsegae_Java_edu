@@ -1,0 +1,92 @@
+@startuml
+class book_pocket.service.BookService {
+- Book[] books
++ int getLengthBooks()
++ Book getBookById(int)
+}
+class book_pocket.entity.Cart {
+- List<Book> listCart
++ void addToCart(Book)
+}
+class book_pocket.service.OrderService {
+- Scanner sc
+- UserService userService
+- BookService bookService
+- int[] cartAmount
++ <<Create>> OrderService(Scanner,UserService)
++ void resetCart()
++ void addCart(String)
++ void decreaseAmount(String)
++ void deleteCartProduct(String)
++ void getCartProductList()
++ void showReceipt()
+}
+class book_pocket.service.AdminService {
+- Scanner sc
+- Admin admin
++ <<Create>> AdminService(Scanner)
+~ boolean authenticate(User,String,String)
+}
+class book_pocket.entity.Admin {
+- String ID_ADMIN
+- String PASSWORD_ADMIN
+- {static} Admin instanceSingleton
+- <<Create>> Admin(String,String)
++ {static} Admin getInstance(String,String)
++ String getId()
++ String getPassword()
++ String toString()
+}
+class book_pocket.entity.User {
++ <<Create>> User(String,String)
++ <<Create>> User(String,String,String)
++ String toString()
+}
+class book_pocket.service.UserService {
+- User user
++ <<Create>> UserService(User)
++ User getUser()
+~ void displayUser()
+}
+class book_pocket.entity.Book {
+- String isbn
+- String name
+- int price
+- String author
+- String desc
+- String category
+- String datePublish
++ <<Create>> Book(String,String,int,String,String,String,String)
++ String getIsbn()
++ String toString()
+}
+class book_pocket.entity.Person {
+- String name
+- String userMobile
+- String address
++ <<Create>> Person(String,String)
++ <<Create>> Person(String,String,String)
++ String getName()
++ String getPhone()
++ String getAddress()
+}
+class book_pocket.service.ShoppingMallService {
+~ String[] menus
+- UserService userService
+- OrderService orderService
+- AdminService adminService
+- Scanner sc
++ <<Create>> ShoppingMallService(Scanner)
+- User getUser()
+- void displayGreeting()
++ boolean displayMenuAndGetIsContinue()
+}
+class book_pocket.ShoppingMallServiceRunner {
+~ {static} Scanner sc
++ {static} void main(String[])
+}
+
+
+book_pocket.entity.Person <|-- book_pocket.entity.Admin
+book_pocket.entity.Person <|-- book_pocket.entity.User
+@enduml

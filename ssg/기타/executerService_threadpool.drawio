@@ -1,0 +1,115 @@
+<mxfile host="app.diagrams.net" modified="2024-02-01T07:19:20.538Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="I4w2SoNZ724mOjdbNGYq" version="23.0.2" type="device">
+  <diagram name="Page-1" id="pJ2-lMa2xK-h-x5YHrSW">
+    <mxGraphModel dx="2163" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-16" value="용용선생 (테이블 수 : 9)" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="160" width="580" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-20" value="테이블 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="230" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-21" value="테이블 6" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="400" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-22" value="테이블 4" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="60" y="350" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-23" value="테이블 8" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="230" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-24" value="테이블 9" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="400" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-25" value="테이블 7" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="60" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-26" value="직원1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Person.svg;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="123" y="30" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-18" value="테이블 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="60" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-17" value="테이블 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="230" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-19" value="테이블 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="400" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-28" value="직원3" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Person.svg;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="241.5" y="30" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-27" value="직원2" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Person.svg;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="181.5" y="30" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-29" value="직원4" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Person.svg;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="301.5" y="30" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-30" value="직원6" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Person.svg;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="420" y="30" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-31" value="직원5" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Person.svg;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="360" y="30" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-32" value="직원7" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Person.svg;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="220.75" y="110" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-33" value="직원9" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Person.svg;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="339.25" y="110" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-34" value="직원8" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Person.svg;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="279.25" y="110" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-49" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;shape=mxgraph.floorplan.doorRight;aspect=fixed;direction=south;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-16">
+          <mxGeometry x="494" y="113" width="85" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-10" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;ExecutorService 와 ThreadPool&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="580" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-12" value="ExecutorService 란?&lt;br&gt;병렬작업 시 여러개의 작업을 효율적으로 처리하기 위해 제공되는 라이브러리" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.stickyNote2;fontColor=#666666;mainText=;fontSize=17;whiteSpace=wrap;fillColor=#ffffcc;strokeColor=#F62E00;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="150" width="310" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-13" value="언제 ExecutorService 를 쓰는지?&lt;br&gt;Java 에서 스레드풀을 생성해서 사용하고자 할 때 스는 유틸 클래스&lt;br&gt;--&amp;gt; es 에서 Task 만 지정해주면 알아서 ThreadPool 을 이용해서 Task 를 실행하고 관리 해줌" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.text.stickyNote2;fontColor=#666666;mainText=;fontSize=17;whiteSpace=wrap;fillColor=#ffffcc;strokeColor=#F62E00;" vertex="1" parent="1">
+          <mxGeometry x="-410" y="460" width="310" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-36" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.mobile;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="160" width="280" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-37" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/business-finances/512/business_finances_finances_calendar_date_dating_appointment-128.png" vertex="1" parent="1">
+          <mxGeometry x="805.5" y="231" width="189" height="189" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-38" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;대기인원&amp;nbsp; 0명&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="460" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-40" value="&lt;pre data-mce-style=&quot;background-color: #f8f8f8; color: #383a42; text-align: start;&quot; data-ke-language=&quot;bash&quot; data-ke-type=&quot;codeblock&quot; class=&quot;hljs angelscript&quot; id=&quot;code_1706758131321&quot; style=&quot;border-color: var(--border-color); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(248, 248, 248); color: rgb(56, 58, 66); text-align: start;&quot;&gt;&lt;br&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="810" width="560" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-42" value="&lt;pre id=&quot;code_1706758131321&quot; class=&quot;hljs angelscript&quot; data-ke-type=&quot;codeblock&quot; data-ke-language=&quot;bash&quot; data-mce-style=&quot;background-color: #f8f8f8; color: #383a42; text-align: start;&quot; style=&quot;border-color: var(--border-color); font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; background-color: rgb(248, 248, 248); color: rgb(56, 58, 66); text-align: start;&quot;&gt;스레드를 사용하고있지 않을 시 &lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;1.&lt;/span&gt; 서버에만 스레드를 쓰고 클라이언트에는 스레드를 쓰지 않는 다는 전제하에 예를 들자면&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;서버는 가게 웨이팅 앱이고 클라이언트는 앱을 다운받지 않은 유저라서&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;    줄 서는거 자체가 불가능. 클라이언트는 직접 가서 기다려야되는 상태&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;    즉, 서버&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;1&lt;/span&gt;에 클라이언트&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;1&lt;/span&gt;가 신호를 보냈고 닫지 않아줬으면 클라이언트&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;2&lt;/span&gt;는 아예 줄 서기도 불가능&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;2.&lt;/span&gt; 서버에 스레드를 달고 클라이언트에도 스레드를 달 경우&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;서버는 가게 웨이팅 앱이고 클라이언트는 앱을 다운받은 유저&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;    스레드들은 다운받은 앱으로 줄 서기가 가능이 해짐 &lt;br style=&quot;border-color: var(--border-color);&quot;&gt;    즉, 서버&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;1&lt;/span&gt;에 클라이언트&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;1&lt;/span&gt;이 돌고 있는 상태에서 클라이언트&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;2&lt;/span&gt;는 줄 서기가 가능함&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;    &lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;3.&lt;/span&gt; 서버를 멀티스레드(concurrent) 로 돌리고 클라이언트에 스레드를 달 경우&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;서버는 웨이팅 앱을 가지고 있는 음식점인데 웨이팅 앱으로 클라이언트&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;1&lt;/span&gt;과 &lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;2&lt;/span&gt;가 순서대로 &lt;br style=&quot;border-color: var(--border-color);&quot;&gt;    웨이팅 요청을 했다는 경우 서버는 가게에 자리가 여러개가 있고 직원도 여럿이 있기&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;    때문에 사람들을 기다리게 하지 않고 한번에 동시에 입장을 시키고 주문을 받을 수 있습니다.&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;    그리고 그 클라이언트&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;1&lt;/span&gt; 과 클라이언트&lt;span class=&quot;hljs-number&quot; style=&quot;border-color: var(--border-color);&quot;&gt;2&lt;/span&gt;는 자리도 여러개고 직원도 여러분이기 때문에 서로의&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;    주문과 상태에 구애받지 않고 각자의 주문과 음식먹는것 등을 자유롭게 가능함​&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="740" width="560" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-43" value="" style="shape=mxgraph.signs.people.waiting_room_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="630" y="610" width="77" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-46" value="" style="shape=mxgraph.signs.people.waiting_room_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="640" y="390" width="77" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-47" value="" style="shape=mxgraph.signs.people.waiting_room_1;html=1;pointerEvents=1;fillColor=#000000;strokeColor=none;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="640" y="500" width="77" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-52" value="용용선생 (테이블 수 : 9)" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="180" width="580" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-59" value="직원1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Person.svg;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-52">
+          <mxGeometry x="123" y="30" width="37" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-60" value="테이블 1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-52">
+          <mxGeometry x="60" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oD8tPnL5Pw214VjNp2NY-71" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;shape=mxgraph.floorplan.doorRight;aspect=fixed;direction=south;" vertex="1" parent="oD8tPnL5Pw214VjNp2NY-52">
+          <mxGeometry x="494" y="113" width="85" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

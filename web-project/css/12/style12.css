@@ -1,0 +1,11 @@
+div.item {
+    float : left;
+    margin : 0 3px;
+    padding : 10px;
+    border : 1px solid black;
+}
+
+div.clear {
+    clear : both;
+    
+}

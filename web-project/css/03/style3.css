@@ -1,0 +1,31 @@
+div {
+    width: 200px;
+    height:200px;
+    background-color: tomato;
+
+    display: flex;
+    /* 주축 */
+    justify-content: center;
+
+    /* 교차축 */
+    align-items: center;
+    flex-direction: row;
+}
+
+#second {
+    background-color: green;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display : flex;
+    /* 주축 */
+    justify-content: center;
+
+    /* 교차축 */
+    align-items: center;
+    flex-direction: row;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function weclome() {
+                return new Promise((res, rej) => {
+                    setTimeout(() => {
+                        console.log("welcome");
+                        res();
+                    }, 1000);
+                });
+            }
+
+            function to() {
+                return new Promise((res, rej) => {
+                    setTimeout(() => {
+                        console.log("to");
+                        res();
+                    }, 1000);
+                });
+            }
+
+            function world() {
+                return new Promise((res, rej) => {
+                    setTimeout(() => {
+                        console.log("world");
+                        res();
+                    }, 1000);
+                });
+            }
+
+            weclome()
+                .then(() => {
+                    return to();
+                })
+                .then(() => {
+                    return world();
+                })
+                .catch((error) => {
+                    console.log(error);
+                })
+                .finally(() => {
+                    console.log("done");
+                });
+
+            console.log("Executed!!");
+        </script>
+    </body>
+</html>

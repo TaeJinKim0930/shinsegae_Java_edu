@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var text = "";
+        var text1 = "";
+        var nums = [2,3,4,7,5];
+
+        // version 1
+        nums.forEach((n) =>{ text += n + "<br>"; })
+        // console.log(text);
+        
+        // version 2
+        nums.forEach(myFun);
+        function myFun(n) {
+            text1 += n + "<br>";
+        }
+        // console.log(text1);
+        
+        // Array.map() : 
+        var nums1 = [1,2,3,4,5];
+        var numMap = nums1.map(myFun1);
+
+        function myFun1 (value, i, arr) {
+            return value * 2;
+        }
+
+        // console.log(numMap);
+
+
+        // Array.filter() --> 값이 3보다 큰 값만 가져와서 새 배열 만들기
+        var numFilter = nums1.filter((n) => {
+            return n > 3;
+        });
+        // console.log(numFilter);
+
+        // Array.reduce() : 각 배열 요소에서 함수를 실행하여 단일 값을 생성(축소) 한다.
+        var numTotal = nums1.reduce(myfunction, 100);
+        function myfunction(total , val) {
+            return total += val;
+        }
+        // console.log(numTotal);
+
+
+
+        // Array.indexOf() : 요소값을 검색 및 위치 반환
+        var fruits = ["a", "b", "c", "d", "e", "a"];
+        // console.log(fruits.indexOf("a"));
+        // console.log(fruits.lastIndexOf("a"));
+
+
+        console.log(nums1.find((n) => {
+            return n > 3;
+        }));
+
+        
+
+
+
+    </script>
+</body>
+</html>

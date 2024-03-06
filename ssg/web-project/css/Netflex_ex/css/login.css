@@ -1,0 +1,117 @@
+@import "./global.css";
+
+html,
+body {
+    background-color: black;
+    height : 100%;
+    overflow: hidden;
+}
+
+.login-title {
+    text-align: center;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left : 100px;
+    margin-right: 100px;
+}
+
+.login-title__maintext {
+    font-size: 3rem;
+    font-style:unset;
+    color : red;
+    display : flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding : 5px;
+}
+
+.login-title__maintext::before {
+    content : "LOG";
+    font-style:unset;
+    color : white;
+    display : flex;
+    justify-content: center;
+    
+}
+
+.login-title__maintext::after {
+    content : "TICS";
+    font-style:unset;
+    color : white;
+    display : flex;
+    justify-content: center;
+    
+}
+
+.login-title__subtext {
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin : 15px;
+    color : white;
+    display : flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-form {
+    display : flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right : 100px;
+}
+
+.login-form input {
+    margin-left : 150px;
+    margin-right: 150px;
+    border : none;
+    outline: none;
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0.342);
+}
+
+/* submit 이라는 애 빼고 전부다 변경 */
+.login-form input:not([type="submit"]) {
+    padding : 10px;
+    border-radius: 5px;
+    margin-top : 10px;
+    color : white;
+}
+
+/* 값 입력 할 때 */
+.login-form input:focus {
+  color : white;
+  border-bottom: solid red;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* 값 입력 한 후 */
+.login-form input:enabled {
+    color : white;
+  }
+
+  /* submit 만 변경 */
+.login-form input[type="submit"] {
+    margin-top : 20px;
+    background-color: red;
+    border-radius: 10px;
+    padding : 15px;
+    color : white;
+
+}
+
+/* submit 에 마우스를 올려 놓았을 때 */
+.login-form input[type="submit"]:hover {
+  cursor: pointer;
+  /* margin-left : 500px; */
+}
+
+/* submit 이 active 되어 있을 시 */
+.login-form input[type="submit"]:active {
+    background-color: purple;
+  
+}

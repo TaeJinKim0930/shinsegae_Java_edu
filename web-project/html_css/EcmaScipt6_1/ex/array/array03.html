@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person = [];
+        person["FirstName"] = "소원";
+        person["LastName" ] = "최";
+        person["Age"] = 26;
+
+        console.log(person[0]); // undefined
+
+        console.log(person["FirstName"]); // 소원
+
+        var person1 = {
+            fname : "choi",
+            lname : "sowon",
+            age : 16
+        }
+
+        // points 배열을 생성하세요. 숫자 5개를 랜덤하게 초기화 할당
+        var points = [Math.random() * 5 -1, Math.random(), Math.random(), Math.random(), Math.random()]
+        
+        /**
+         * [
+                -0.7579229443317972,
+                0.4703604532255321,
+                0.7663036212929508,
+                0.33409534849289657,
+                0.6147013963025529
+            ]
+        */
+        console.log(points);
+
+        console.log(Array.isArray(points)); // true
+
+        function isArray(x) {
+            return x.constructor.toString().indexOf("Array") > -1;
+        }
+
+        console.log(isArray(person)); // true
+
+        console.log(person instanceof Array); // true
+
+        console.log(person1 instanceof Array); // false
+
+        
+
+    </script>
+</body>
+</html>

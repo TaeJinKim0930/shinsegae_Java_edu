@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>V U E</title>
+        <!-- VUE.js 설치 -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    </head>
+    <body>
+        <!-- VUE.js 가 랜더링한 결과 보여주기 -->
+        <div id = "app">
+            <!-- 루트 컴포넌트 (뷰인스턴스)의 데이터 속성인 message 값 화면에 표시 -->
+            {{message}}
+        </div>
+
+        <script>
+            // 로딩 및 Vue 전역변수로 정의되었는지 확인
+            console.assert(typeof Vue !== 'undefined');
+            // 뷰 인스턴스 생성
+            new Vue ({
+                // 뷰 인스턴스가 그려질 곳을 지정할때 사용하는 속성
+                el: '#app',
+                // data 속성에 데이터 객체의 메세지 'Hello Vue!' 설정
+                data : {message: 'Hello Vue'}
+            });
+        </script>
+    </body>
+</html>

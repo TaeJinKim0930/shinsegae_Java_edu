@@ -1,0 +1,9 @@
+구조
+parent
+child
+service
+db connection (maybe connection pool)
+factory
+container
+
+

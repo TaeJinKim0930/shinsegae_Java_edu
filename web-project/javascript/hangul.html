@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('form').submit(function (event) {
+                let value = $('input').val();
+                if (value.replace(/[가-힣]/g,''.length == 0)) {
+                    alert('진행');
+                } else {
+                    alert('한글plz');
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

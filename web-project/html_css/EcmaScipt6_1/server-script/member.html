@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        class Member {
+            static GREETING = "Hi";
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            get getName() {
+				return this.name;
+			}
+			
+			set setName(name) {
+				this.name = name;
+			}
+
+            get getAge() {
+                return this.age;
+            }
+
+			set setAge(age) {
+				this.age = age;
+			}
+
+            toString() {
+                console.log(`${Member.GREETING} 난 ${this.getName}이고 ${this.getAge}살 입니다.`);
+			}
+
+            getLeader() {
+                console.log("리더 취득");
+            }
+
+        }
+
+        class Soccer extends Member {
+			constructor(name, age, sosok) {
+                super(name, age);
+                this.sosok = sosok;
+			}
+			
+
+
+            getData() {
+                console.log("데이터 취득");
+            }
+
+            get getSosok() {
+                return this.sosok;
+            }
+
+            toString() {
+                super.toString();
+                console.log(`소속은 ${this.getSosok} 에서 근무하고 있습니다.` )
+			}
+		}
+
+
+        let soccer = new Soccer("홍길동", "30", "신세계INC");
+        soccer.toString();
+        soccer.getLeader();
+        soccer.getData();
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

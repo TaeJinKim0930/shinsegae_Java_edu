@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        lunch_menu = {
+            월 :  "1",
+            화 :  "2",
+            수 :  "3",
+            목 :  "4",
+            금 :  "5",
+            토 :  "6",
+            일 :  "7",
+        }
+        
+        function getMenu (food, callback) {
+            let num = lunch_menu[food];
+            callback(num);
+        }
+
+        function displayMenu(day, menu) {
+            console.log(day, menu);
+        }
+
+        getMenu("월", displayMenu);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

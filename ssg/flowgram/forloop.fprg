@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="TaeJin Kim"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-08 10:15:01 &#50724;&#51204;"/>
+        <attribute name="created" value="VGFlSmluIEtpbTtUSks7MjAyMy0xMi0wODswOTozMDozOCDsmKTsoIQ7MTA0MTgx"/>
+        <attribute name="edited" value="VGFlSmluIEtpbTtUSks7MjAyMy0xMi0wODsxMDoxNTowMSDsmKTsoIQ7MTsxMDQyNzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="&#51221;&#49688;" type="Integer" array="False" size=""/>
+            <for variable="&#51221;&#49688;" start="1" end="10" direction="inc" step="1">
+                <output expression="&#51221;&#49688;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

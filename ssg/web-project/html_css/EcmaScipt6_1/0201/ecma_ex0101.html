@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ECMAScript6</title>
+</head>
+<body>
+	<script>
+		/**
+		 * ab
+		 * bc
+		 * cd
+		 * 
+		 */
+		let conffeNames = ["ab", "bc", "cd"];
+		for(let name of conffeNames) {
+			console.log(name);
+		}
+
+		/**
+		 * h
+		 * i
+		 * !
+		 * 
+		 */
+		let str = "hi!";
+		for(let ch of str) {
+			console.log(ch);
+		}
+
+		let coffee = {
+			name : "ab",
+			getName : () => {
+				return this.name;
+			},
+
+			setName : (name) => {
+				this.name = name;
+			},
+
+			display : () => {
+				console.log(this.name);
+			}
+		};
+
+		for(let prop in coffee) {
+			console.log(prop);
+		}
+
+	</script>	
+</body>
+</html>

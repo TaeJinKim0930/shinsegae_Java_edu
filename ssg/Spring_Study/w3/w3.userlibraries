@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Gradle: org.opentest4j:opentest4j:1.2.0">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar" />
+  </library>
+  <library name="Gradle: org.apiguardian:apiguardian-api:1.1.2">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar" />
+  </library>
+  <library name="Gradle: javax.servlet:javax.servlet-api:4.0.1">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/4.0.1/a27082684a2ff0bf397666c3943496c44541d1ca/javax.servlet-api-4.0.1.jar" />
+  </library>
+  <library name="Gradle: org.mariadb.jdbc:mariadb-java-client:3.0.3">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.mariadb.jdbc/mariadb-java-client/3.0.3/d88d6d447b8d6194bd3895c96abedd21b4d83355/mariadb-java-client-3.0.3.jar" />
+  </library>
+  <library name="Gradle: com.zaxxer:HikariCP:5.0.0">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/5.0.0/8685b74cebc0435144d652311a2930f5914c968a/HikariCP-5.0.0.jar" />
+  </library>
+  <library name="Gradle: org.modelmapper:modelmapper:3.0.0">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.modelmapper/modelmapper/3.0.0/476892f4b77c03e7e7813fdba8840921d79bf2a2/modelmapper-3.0.0.jar" />
+  </library>
+  <library name="Gradle: org.apache.logging.log4j:log4j-core:2.17.2">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.17.2/fa43ba4467f5300b16d1e0742934149bfc5ac564/log4j-core-2.17.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.logging.log4j:log4j-slf4j-impl:2.17.2">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j-impl/2.17.2/183f7c95fc981f3e97d008b363341343508848e/log4j-slf4j-impl-2.17.2.jar" />
+  </library>
+  <library name="Gradle: org.apache.logging.log4j:log4j-api:2.17.2">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.2/f42d6afa111b4dec5d2aea0fe2197240749a4ea6/log4j-api-2.17.2.jar" />
+  </library>
+  <library name="Gradle: jstl:jstl:1.2">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/jstl/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar" />
+  </library>
+  <library name="Gradle: org.projectlombok:lombok:1.18.22">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.22/9c08ea24c6eb714e2d6170e8122c069a0ba9aacf/lombok-1.18.22.jar" />
+  </library>
+  <library name="Gradle: org.junit.jupiter:junit-jupiter-api:5.8.1">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.8.1/6538b88eb8bf8811bc7b6efb5246f835c15e0bfe/junit-jupiter-api-5.8.1.jar" />
+  </library>
+  <library name="Gradle: org.slf4j:slf4j-api:1.7.30">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.30/b5a4b6d16ab13e34a88fae84c35cd5d68cac922c/slf4j-api-1.7.30.jar" />
+  </library>
+  <library name="Gradle: org.junit.platform:junit-platform-commons:1.8.1">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.8.1/1e362cbe6d0f225b066757865e233972557484/junit-platform-commons-1.8.1.jar" />
+  </library>
+  <library name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.8.1">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.8.1/21b86e08aae2720bbf017703669948be96d1388c/junit-jupiter-engine-5.8.1.jar" />
+  </library>
+  <library name="Gradle: org.junit.platform:junit-platform-engine:1.8.1">
+    <archive path="C:/Users/TaeJin Kim/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.8.1/e6c63bf990dc88a6527b4ed617b23e47048f07e0/junit-platform-engine-1.8.1.jar" />
+  </library>
+</eclipse-userlibraries>
+

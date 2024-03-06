@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ECMAScript6</title>
+</head>
+<body>
+	<script>
+		const calc = {
+			fnum : 10,
+			snum : 20,
+			add : function(a,b) {
+				const add1 = () => {
+					return a + b;
+				}
+				console.log(add1(a,b));
+			},
+
+			sub : function(a,b) {
+				const sub1 = () => {
+					return a - b;
+				}
+				console.log(sub1(a,b));
+			},
+
+			prod : function(a,b) {
+				const prod1 = () => {
+					return a * b;
+				}
+				console.log(prod1(a,b));
+			},
+
+			div : function(a,b) {
+				const div1 = () => {
+					return a / b;
+				}
+				console.log(div1(a,b));
+			}
+		}
+		// calc.print();
+	</script>
+</body>
+</html>

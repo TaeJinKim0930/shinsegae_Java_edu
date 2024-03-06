@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>ECMAScript6</title>
+</head>
+<body>
+	<script>
+		const cal = {
+			fNum : 100,
+			sNum : 20,
+			print : function() {
+				// this : cal() 의 객채, fnum, snum, print() 출력
+				console.log(this);
+				function add() {
+					// this : window ...
+					console.log(this);
+					return this.fNum + this.sNum;
+				}
+				console.log(this.fNum + " " + this.sNum + " = " + add());
+			}
+		}
+		cal.print();
+	</script>
+</body>
+</html>

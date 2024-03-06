@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Option template</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+        <!-- 템플릿 문법에는 Mustache 문법과 v-bind 속성이 있습니다. -->
+    </head>
+    <body>
+        <div id="app">
+            <div>
+                <ul>
+                    <!-- 여기에 있는 items 가 밑에 있는 items 를 가지고 오는거고 item 은 여기서 임시로 만들어 준거. -->
+                    <li v-for="item in items" v-bind:key="item.name">
+                        {{item.name}}:{{item.price}} x {{item.quantity}} =
+                        {{item.price * item.quantity}} 원
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            var items = [
+                {
+                    name: "cpu",
+                    price: 45000,
+                    quantity: 1,
+                },
+                {
+                    name: "mainBoard",
+                    price: 75000,
+                    quantity: 2,
+                },
+                {
+                    name: "KeyBoard",
+                    price: 15000,
+                    quantity: 3,
+                },
+            ];
+
+            console.assert(typeof Vue !== "undefined");
+            new Vue({
+                el: "#app",
+                data: { items: items },
+            });
+        </script>
+    </body>
+</html>
