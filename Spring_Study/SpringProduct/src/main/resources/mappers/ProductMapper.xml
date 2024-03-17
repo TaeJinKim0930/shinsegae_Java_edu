@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssg.springproduct.mapper.ProductMapper">
+    <select id="getTime" resultType="string">
+        select now()
+    </select>
+
+    <insert id="insert">
+        insert into tbl_product(pname, price, quantity)
+        values (#{pname}, #{price}, #{quantity})
+    </insert>
+
+    <select id="selectAll" resultType="com.ssg.springproduct.domain.ProductVO">
+        select *
+        from tbl_product
+        order by pno desc
+    </select>
+
+    <select id="selectOne" resultType="com.ssg.springproduct.domain.ProductVO">
+        select *
+        from tbl_product
+        where pno = #{pno}
+    </select>
+
+    <delete id="delete">
+        delete
+        from tbl_product
+        where pno = #{pno}
+    </delete>
+
+    <update id="update">
+        update tbl_product
+        set pname    = #{pname},
+            price  = #{price},
+            quantity = #{quantity}
+        where pno = #{pno}
+    </update>
+
+    <select id="selectList" resultType="com.ssg.springproduct.domain.ProductVO">
+        select * from tbl_product
+        <where>
+            <if test="types != null and types.length > 0">
+                <foreach collection="types" item="type" open="(" close=") " separator=" OR ">
+                    <if test="type == 't'.toString()">
+                        title like concat('%', #{keyword}, '%')
+                    </if>
+                    <if test="type == 'w'.toString()">
+                        writer like concat('%', #{keyword}, '%')
+                    </if>
+                </foreach>
+            </if>
+<!--            <if test="finished">-->
+<!--                <trim prefix="and">-->
+<!--                    finished = 1-->
+<!--                </trim>-->
+<!--            </if>-->
+<!--            <if test="from != null and to != null">-->
+<!--                <trim prefix="and">-->
+<!--                    dueDate between #{from} and #{to}-->
+<!--                </trim>-->
+<!--            </if>-->
+        </where>
+
+        order by pno desc limit #{skip}, #{size}
+    </select>
+
+    <sql id="search">
+        <where>
+            <if test="types != null and types.length > 0">
+                <foreach collection="types" item="type" open="(" close=") " separator=" OR ">
+                    <if test="type == 't'.toString()">
+                        title like concat('%', #{keyword}, '%')
+                    </if>
+                    <if test="type == 'w'.toString()">
+                        writer like concat('%', #{keyword}, '%')
+                    </if>
+                </foreach>
+            </if>
+<!--            <if test="finished">-->
+<!--                <trim prefix="and">-->
+<!--                    finished = 1-->
+<!--                </trim>-->
+<!--            </if>-->
+<!--            <if test="from != null and to != null">-->
+<!--                <trim prefix="and">-->
+<!--                    dueDate between #{from} and #{to}-->
+<!--                </trim>-->
+<!--            </if>-->
+        </where>
+    </sql>
+
+    <select id="getCount" resultType="int">
+        select count(*)
+        from tbl_product
+        <where>
+            <if test="types != null and types.length > 0">
+                <foreach collection="types" item="type" open="(" close=") " separator=" OR ">
+                    <if test="type == 't'.toString()">
+                        title like concat('%', #{keyword}, '%')
+                    </if>
+                    <if test="type == 'w'.toString()">
+                        writer like concat('%', #{keyword}, '%')
+                    </if>
+                </foreach>
+            </if>
+<!--            <if test="finished">-->
+<!--                <trim prefix="and">-->
+<!--                    finished = 1-->
+<!--                </trim>-->
+<!--            </if>-->
+<!--            <if test="from != null and to != null">-->
+<!--                <trim prefix="and">-->
+<!--                    dueDate between #{from} and #{to}-->
+<!--                </trim>-->
+<!--            </if>-->
+        </where>
+    </select>
+
+    <select id="nameExist" resultType="boolean">
+        SELECT EXISTS(SELECT 1 FROM tbl_product WHERE pname = #{pname})
+    </select>
+
+
+</mapper>
